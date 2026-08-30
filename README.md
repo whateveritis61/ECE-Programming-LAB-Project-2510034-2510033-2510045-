@@ -59,10 +59,10 @@ float get_attendance_marks(float att, int *barred) {
     if (att <= 60) return 6;
     if (att <= 70) return 7;
     if (att <= 80) return 8;
-    return 10; // above 80
+    return 10; 
 }
 
-// Assignment -> 10 if submitted, else 0
+if submitted, else 0
 float get_assignment_marks(char submitted) {
     return (submitted == 'y' || submitted == 'Y') ? 10 : 0;
 }
