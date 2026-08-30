@@ -1,2 +1,6 @@
 # ECE-Programming-LAB-Project-2510034-2510033-2510045-
-The Student Result &amp; Attendance Tracker is a menu-driven C programming project designed to manage and evaluate student academic information efficiently. The system allows users to add student information, record and evaluate their results, track attendance, view saved records, display all registered students, and search for students by name.
+The Student Result & Attendance Tracker is a menu-driven C programming project designed to manage and evaluate student academic information efficiently. The system allows users to add student information, record and evaluate their results, track attendance, view saved records, display all registered students, and search for students by name.
+
+
+  Roll 2510034's Part(Handled the Structures, Data Type,GRading Logic and Github part)
+  
