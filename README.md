@@ -133,6 +133,9 @@ void update_cgpa(struct Student *s) {
 *Making A Student's Result  and Attendance Tracker*
 <p align="center">
 <img width="350" height="427" alt="image" src="https://github.com/user-attachments/assets/99df72ef-b288-4a3e-937c-1f9e95c76ae3" />
+<img width="830" height="472" alt="image" src="https://github.com/user-attachments/assets/0ca3826f-72bd-4b6c-ab4f-8d0acaa45e10" />
+<img width="842" height="461" alt="image" src="https://github.com/user-attachments/assets/33fbec5f-d9d5-4954-8525-4673f5246b01" />
+![Uploading image.png…]()
 
 
 </p>
