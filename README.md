@@ -3,6 +3,7 @@ The Student Result & Attendance Tracker is a menu-driven C programming project d
 
 
   Roll 2510034's Part(Handled the Structures, Data Type,GRading Logic and Github part)
+  Roll 2510045's Part(Handling the file and persisting the logic)
   
 ## *Code :*
 ```C
@@ -128,7 +129,33 @@ void update_cgpa(struct Student *s) {
 
 ```
 
+/* ============================================================================
+   PART 2: FILE HANDLING & PERSISTENCE LOGIC
+   ============================================================================ */
 
+void write_log(struct Student s) {
+    FILE *f = fopen("student_log.txt", "a");
+    if (!f) { printf("File write error!\n"); return; }
+
+    fprintf(f, "Department: %s | Student: %s | CGPA: %.2f | Overall: %s\n",
+            s.dept, s.name, s.cgpa, s.status == PASS ? "PASS" : "FAIL");
+
+    for (int i = 0; i < NUM_COURSES; i++) {
+        struct Course *c = &s.courses[i];
+        fprintf(f, "   %-20s Total: %5.1f  GP: %.2f%s\n",
+                c->name, c->total, c->grade_point, c->failed ? " (FAIL)" : "");
+    }
+    fprintf(f, "--------------------------------------------------------\n");
+    fclose(f);
+}
+
+void read_log(void) {
+    FILE *f = fopen("student_log.txt", "r");
+    if (!f) { printf("No log file found yet.\n"); return; }
+    char ch;
+    while ((ch = fgetc(f)) != EOF) putchar(ch);
+    fclose(f);
+}
 ## *Output :* 
 *Making A Student's Result  and Attendance Tracker*
 <p align="center">
